@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sass.css">
+    <title>Moment 5 - Webtjänst och Fetch API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="topnav">
+        <a href="#" id="active" class="active">DT173G</a>
+        <div id="myLinks">
+        <a href="#">Startsida</a>
+        <a href="#">Nyheter</a>
+        <a href="#">Mina sidor</a>
+        <a href="#">Om oss</a>
+        <a href="#">Kontakt</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>   
+
+</header>
+  
+
+<div class="container"> 
+    <h1 class="h1">Kurser jag läst: </h1>
+
+   <!-- lista kurser med Ajax-->
+
+<ul id="courslist" class="courcelist"> </ul>
+
+
+<h2> Läggg till kurs: </h2>
+
+<form id="coursform" > 
+<div class="coursform"> 
+<div class="box"> 
+    <label for="Kurskod">Kurskod:</label><br>
+    <input type="text" id="Kurskod" name="Kurskod" class="input"><br>
+    <label for="Kursnamn">Kursnamn:</label><br>
+    <input type="text" id="Kursnamn" name="Kursnamn" class="input"><br>
+  </div>
+  <div class="box"> 
+    <label for="Progression">Progression :</label><br>
+    <input type="text" id="Progression" name="Progression" class="input"><br>
+    <label for="Kursplan">Kursplan:</label><br>
+    <input type="text" id="Kursplan" name="Kursplan" class="input"><br><br>
+  </div>
+</div>
+<input type="submit" value="Lägg till kurs" id="submit" class="button">
+
+</form>
+
+
+      
+    <script src="./js/main.js"></script>
+
+    <footer>
+      <p>Moment 5 _ DT173G, REST-webbtjänster </p>
+      <p> ©Copyright Najah Hawa, 2024</p>
+    </footer>
+</div>
+
+
+</body>
+</html>

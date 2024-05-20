@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.container {
+  background-color: #c2dcee;
+  padding-bottom: 100px;
+}
+
+.topnav {
+  background-color: #4997ce;
+  overflow: visible;
+  height: 100px;
+}
+
+.topnav a {
+  color: #333;
+  padding: 40px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  float: right;
+}
+
+.topnav a.icon {
+  display: none;
+}
+
+#myLinks {
+  display: block;
+}
+
+.h1 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #333;
+  padding-left: 10%;
+  font-size: 25px;
+}
+
+.courcelist {
+  padding-left: 10%;
+  min-height: auto;
+}
+
+.cource {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #333;
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+.coursform {
+  display: flex;
+  padding-left: 40px;
+}
+
+.input {
+  width: 80%;
+  height: 30%;
+}
+
+.box {
+  padding-left: 6%;
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+.button {
+  margin-left: 10%;
+  width: 25%;
+  margin-right: 65%;
+  padding-bottom: 15px;
+  margin-bottom: 10%;
+  background-color: #4997ce;
+}
+
+footer {
+  height: 40px;
+}
+
+footer p {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #4997ce;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: #1b4563;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #1b4563;
+    color: white;
+    margin-right: 70%;
+    margin-top: 0px;
+  }
+  .box {
+    padding-left: 2%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .container {
+    padding-bottom: 40px;
+  }
+  .box {
+    padding-right: 10px;
+    width: 100%;
+  }
+  .h1 {
+    font-size: 23px;
+    padding-left: 13%;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  .coursform {
+    display: block;
+    padding-left: 20px;
+  }
+}

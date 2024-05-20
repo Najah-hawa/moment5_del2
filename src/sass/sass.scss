@@ -1,0 +1,78 @@
+@import  "basic";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+.container{
+background-color: $light-navcolor;
+padding-bottom: 100px;
+}
+.topnav {
+    background-color: $navcolor;
+    overflow:visible;
+    height: 100px;
+}
+.topnav a {
+    color: $primary-color;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: $font-size;
+    float: right;
+}
+.topnav a.icon {
+    display: none;
+}
+
+#myLinks {
+    display: block;
+}
+
+// användning av mixin 
+.h1{
+  @include titel;
+  font-size: 25px;
+}
+.courcelist{
+  padding-left: 10%;
+  min-height: auto;
+}
+.cource{
+font-size: $font-size;
+padding-bottom: 10px;
+}
+h2{
+  @include titel;
+  font-size: 20px;
+}
+.coursform{
+display:flex;
+padding-left:40px;
+}
+.input{
+  width:80%;
+  height: 30%
+}
+.box {
+  @include box; 
+}
+.button{
+  @include submit; 
+}
+
+footer{
+  height: 40px;
+}
+footer p{
+  font-size: $font-size;
+  text-align: center;
+}
+//import inställningar för css i mobilläge
+@import "media";
+  
+  
