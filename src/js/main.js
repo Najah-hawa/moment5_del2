@@ -2,7 +2,7 @@
 
 window.onload = init;
 //let url = "http://localhost/php-api/cources/read.php";
-url = "http://studenter.miun.se/~naha2204/dt173g/php-api/cources/read.php";
+url = "https://studenter.miun.se/~naha2204/dt173g/php-api/cources/read.php";
 
 const Kurskodinput =document.getElementById("Kurskod");
 const Kursnamninput =document.getElementById("Kursnamn");
